@@ -5,9 +5,13 @@
   "scripts": {
     "start": "node ./server.js"
   },
+  "engines": {
+    "node": "^v14.18.0",
+    "npm": "^8.19.2"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
-    "bootstrap": "^5.2.1",
+    "bootstrap": "^4.5.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
@@ -16,5 +20,20 @@
     "jquery": "^3.6.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "\"Assignment 1\"",
+  "main": "server.js",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercer-mk/MyPortfolio.git"
+  },
+  "author": "Milan K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercer-mk/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/mercer-mk/MyPortfolio#readme"
 }

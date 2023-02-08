@@ -1,0 +1,22 @@
+<%- include partials/header.ejs %>
+
+<%- include partials/main_nav.ejs %>
+
+
+<!-- Main Content -->
+<main class="container">
+    <div class="jumbotron">
+        <h1 class="display-6"><%= title %> Offered</h1>
+
+        <div class="row mt-2 p-1">
+            <%- include('partials/card.ejs', {src: "../Assets/images/web.jpeg",title:"Web Developement",height:"200"}); %>
+            <%- include('partials/card.ejs', {src: "../Assets/images/database.png",title:"Database Administrator",height:"200"}); %>
+            <%- include('partials/card.ejs', {src: "../Assets/images/cloud.jpg",title:"Cloud Computing",height:"200"}); %>
+        </div>
+
+    </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
+
+<%- include partials/footer.ejs %>

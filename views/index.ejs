@@ -1,21 +1,25 @@
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
-  
 
-  <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
+
+<!-- Main Content -->
+<main class="container">
+  <div class="jumbotron">
+    <!--<h1 class="display-6">Welcome to <%= title %></h1>-->
+    <h1 class="dispaly-6">This is my Portfolio</h1>
+    <h4>Everybody Needs portfolio to showcase Their work</h4>
+
+    <div>
+      <p class="txt-muted">Please Click below to know more about me</p>
+      <a href="/about" class="badge badge-dark p-2">About</a>
+      <a href="/projects" class="badge badge-danger p-2">Projects</a>
+      <a href="/services" class="badge badge-primary p-2">Services</a>
+      <a href="/contact" class="badge badge-info p-2">Contact Me</a>
     </div>
-  </main>
-  
-<%- include partials/bottom_nav.ejs %>  
+  </div>
+</main>
+
+<%- include partials/bottom_nav.ejs %>
 
 <%- include partials/footer.ejs %>
-  
-
-
-
-

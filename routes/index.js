@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get("/", function (req, res, next) {
-  res.render("index", { title: "Home" });
+  res.render("index", { title: "Home", message: "My Portfolio" });
 });
 
 /* GET home page. */
@@ -13,22 +13,22 @@ router.get("/home", function (req, res, next) {
 
 /* GET About Us page. */
 router.get("/about", function (req, res, next) {
-  res.render("index", { title: "About" });
+  res.render("about.ejs", { title: "About" });
 });
 
 /* GET Projects page. */
 router.get("/projects", function (req, res, next) {
-  res.render("index", { title: "Projects" });
+  res.render("projects", { title: "Projects" });
 });
 
 /* GET Services page. */
 router.get("/services", function (req, res, next) {
-  res.render("index", { title: "Services" });
+  res.render("services", { title: "Services" });
 });
 
 /* GET Contact Us page. */
 router.get("/contact", function (req, res, next) {
-  res.render("index", { title: "Contact" });
+  res.render("contact", { title: "Contact" });
 });
 
 module.exports = router;
