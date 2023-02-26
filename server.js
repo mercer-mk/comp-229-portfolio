@@ -4,7 +4,13 @@
  * Module dependencies.
  */
 
-var app = require("./app");
+/*server.js
+ Milankumar Chhaganbhai Khunt
+301245415
+02/10/2022
+*/
+
+var app = require("./server/config/app");
 var debug = require("debug")("myportfolio:server");
 var http = require("http");
 
@@ -12,7 +18,7 @@ var http = require("http");
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || "3000");
+var port = normalizePort(process.env.PORT || "3500");
 app.set("port", port);
 
 /**

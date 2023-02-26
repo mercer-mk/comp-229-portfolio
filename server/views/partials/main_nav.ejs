@@ -43,6 +43,14 @@
         <a class="nav-link" href="/services"><i class="fas fa-cogs"></i> Services </a>
       </li>
 
+      <% if (title == "Contact List") { %>
+      <li class="nav-item active">
+        <% } else  { %>
+      <li class="nav-item">
+        <% } %>
+        <a class="nav-link" href="/contact-list"><i class="fas fa-cogs"></i> Contact List </a>
+      </li>
+
       <% if (title == "Contact") { %>
       <li class="nav-item active">
         <% } else  { %>
@@ -50,5 +58,16 @@
         <% } %>
         <a class="nav-link" href="/contact"><i class="fas fa-mobile-alt"></i> Contact </a>
       </li>
+
+
+
+
+      <% if(typeof displayName == 'string' && displayName) { %>
+      <li class="nav-item"><a href="/logout " class="nav-link  btn-danger">
+          <i class="fas fa-lg fa-sign-out-alt"></i> Logout</a></li>
+      <% } else { %>
+      <li class="nav-item"><a href="/login" class="nav-link btn-info">
+          <i class="fas fa-lg fa-sign-in-alt"></i> Login</a></li>
+      <% } %>
   </div>
 </nav>
